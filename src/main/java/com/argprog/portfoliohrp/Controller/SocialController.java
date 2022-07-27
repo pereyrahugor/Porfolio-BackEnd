@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping ("/Social")
-@CrossOrigin ("https://porfolio-frontend-argprog-hrp.web.app/")
+@CrossOrigin ("https://porfolio-frontend-argprog-hrp.web.app")
 public class SocialController {
         @Autowired
         ImpSocialService impSocialService;
