@@ -27,9 +27,11 @@ public class PersonaDto {
     private String estate;            
     @NotBlank
     private String contact;
+    @NotBlank
+    private String phone;
 
     public PersonaDto(String name, String text, String lastName, String description,
-                      String imgPerfil, String imgBanner, String country, String estate, String contact) {
+                      String imgPerfil, String imgBanner, String country, String estate, String contact, String phone) {
         this.name = name;
         this.text = text;
         this.lastName = lastName;
@@ -39,5 +41,6 @@ public class PersonaDto {
         this.country = country;
         this.estate = estate;
         this.contact = contact;
+        this.phone = phone;
     }
 }

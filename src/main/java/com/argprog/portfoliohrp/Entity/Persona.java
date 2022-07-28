@@ -3,7 +3,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -27,12 +26,13 @@ public class Persona{
     private String country;
     private String estate;
     private String contact;
+    private String phone;
 
     public Persona() {
     }
 
     public Persona(String name, String text, String lastName, String description,
-                   String imgPerfil, String imgBanner, String country, String estate, String contact) {
+                   String imgPerfil, String imgBanner, String country, String estate, String contact, String phone) {
         this.name = name;
         this.text = text;
         this.lastName = lastName;
@@ -42,6 +42,7 @@ public class Persona{
         this.country = country;
         this.estate = estate;
         this.contact = contact;
+        this.phone = phone;
     }
       
 }

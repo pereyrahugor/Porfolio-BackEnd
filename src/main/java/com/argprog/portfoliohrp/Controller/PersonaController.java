@@ -54,7 +54,7 @@ public class PersonaController {
             return new ResponseEntity(new Mensaje("El Correo ingresado ya existe"), HttpStatus.BAD_REQUEST);
         Persona persona = new Persona(personaDto.getName(), personaDto.getText(), personaDto.getLastName(),
                                       personaDto.getDescription(), personaDto.getImgPerfil(), personaDto.getImgBanner(),
-                                      personaDto.getCountry(), personaDto.getEstate(), personaDto.getContact());
+                                      personaDto.getCountry(), personaDto.getEstate(), personaDto.getContact(), personaDto.getPhone());
         impPersonaService.save(persona);
         return new ResponseEntity(new Mensaje("Nueva Persona Agregada Correctamente"), HttpStatus.OK);
     }
@@ -77,6 +77,7 @@ public class PersonaController {
         persona.setCountry(personaDto.getCountry());
         persona.setEstate(personaDto.getEstate());
         persona.setContact(personaDto.getContact());
+        persona.setPhone(personaDto.getPhone());
             impPersonaService.save(persona);
             return new ResponseEntity(new Mensaje("Datos Personales Actualizados Correctamente"), HttpStatus.OK);
     }
