@@ -1,0 +1,112 @@
+Notas de base de datos
+
+Nombre base: portfoliohrp
+clave trabajo:""
+clave casa:"Destiny22017@"
+
+query datos tabla person
+
+insert into persona (id, contact, country, description, estate, img_banner, img_perfil, last_name, name, text)
+					values(1, "pereyrahugor@gmail.com", "Argentina", "Jefe de Calidad y Mejora Continua. Asesor en Tecnoligías de Gestión. Análisis y mejora de procesos. Desarrollo de automatizaciones en Google App Script, FullStack, SQL y Arduino.", "Buenos Aires",
+							"https://media.istockphoto.com/photos/3d-render-abstract-wallpaper-with-blue-pink-violet-neon-light-aurora-picture-id1226546385?k=20&m=1226546385&s=170667a&w=0&h=Ty031oa6p_J4PgLjeLTjzmcKa0ZRxUvOxVROoGZ95iU=",
+                            "https://i.ibb.co/qYLRdwT/Whats-App-Image-2022-07-06-at-10-19-17-AM.jpg",
+                            "Pereyra","Hugo Reynaldo","FullStack Developer Jr");
+                            
+select * from persona;
+
+insert into experience (id, business, description_position, id_persona, img_business, position, year_in, year_out)
+					values(1, "Metalúrgica JMD","Tareas Generales de producción",1,"https://i.ibb.co/h2WBYRm/logo-alfa-final.png","Operario",'2009-11-25','2015-06-01');
+insert into experience (id, business, description_position, id_persona, img_business, position, year_in, year_out)
+					values(2, "Metalúrgica JMD","Implementación Normas ISO y Mejora Continua",1,"https://i.ibb.co/h2WBYRm/logo-alfa-final.png","Responsable SGI",'2015-06-01','2022-01-01'); 
+insert into experience (id, business, description_position, id_persona, img_business, position, year_in)
+					values(3, "Metalúrgica JMD","Seguimiento y Mejora de Procesos",1,"https://i.ibb.co/h2WBYRm/logo-alfa-final.png","Jefe de Calidad y Mejora Continua",'2022-01-01'); 
+
+
+select * from experience;
+
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (1, "Conocimiento en mecanizado, CNC, computación, excel avanzado, programacion intermedia, microcontroladores basico.",
+								"3 años",1,"https://i.ibb.co/v4g1Vz5/eet-n2.jpg","Tecnico Electromecanico","2007-11-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (2, "Teoria y practica en Torneria, Fresado y Soldadura.",
+								"120 hs",1,"https://i.ibb.co/b1GDC8S/uom.jpg","Operario Multiple","2008-11-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (3, "Programación y Configuración de Equipos CNC.",
+								"60 hs",1,"https://i.ibb.co/b1GDC8S/uom.jpg","Operaio CNC","2009-12-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (4, "Operador de Maquinas Manotacargas de hasta 5 ton - Renovación anul.",
+								"10 hs",1,"https://i.ibb.co/tbqNFH4/OA-Trigo.jpg","Operador de Montacarga","2015-09-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (5, "Gestión y Liderazgo para equipos de trabajo.",
+								"50 hs",1,"https://i.ibb.co/239rgFF/INTI.jpg","Dinamica y Trabajo en Equipo","2015-10-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (6, "Configuración y uso de Sistema de Gestión Tango.",
+								"30 hs",1,"https://i.ibb.co/1ZnS6Y5/Axoft-Tango.jpg","Gestión Comercial Operativa","2015-11-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (7, "Calculos y metodos para reducción de costos en el manejo de inventarios.",
+								"10 hs",1,"https://i.ibb.co/cX5DT1F/gs1.png","Manejo Eficiente de Inventarios","2016-03-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (8, "Uso de planillas de Calculo Microsoft Excel Intermedio.",
+								"15 hs",1,"https://i.ibb.co/8nwc6n4/CBTech.jpg","Planilla de calculo Excel","2016-09-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (9, "Teoria y Practica de uso adecuado de elementos de medición, calibración, verificación y aprobación de los mismo.",
+								"20 hs",1,"https://i.ibb.co/ZddVQ9s/tuv.jpg","Gestión de Metrologia y Calibración","2017-09-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (10, "Configuración y uso de Microcontroladores Arduino, electronica basica, sensores y actuadores.",
+								"40 hs",1,"https://i.ibb.co/hyqCNMz/monarca.jpg","Programación de Microcontroladores","2019-06-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (11, "Aplicación y Automatización de Herramientas de google con GAS.",
+								"20 hs",1,"https://i.ibb.co/p4jqJZy/udemy.jpg","Google Apps Scripts - GAS","2020-03-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (12, "Programación en HTML, JS, JAVA enfocada el uso en MVC.",
+								"60 hs",1,"https://i.ibb.co/8mySWFr/iac.jpg","Java Web FullStack Jr","2020-11-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (13, "Cración, Edición y mantenimiento de Bases de Datos con SQL en Posgress y MySQL.",
+								"20 hs",1,"https://i.ibb.co/8mySWFr/iac.jpg","SQL y DBA","2022-12-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (14, "Teoria de funcionamiento y programación de PLC SIEMENS.",
+								"30 hs",1,"https://i.ibb.co/TPBP537/edutin.png","Programación de PLC","2021-01-01");
+insert into education (id, description_education, duration, id_persona, img_institute, title, year_studied)
+						values (15, "Asesoria en la aplicación y seguimiento de Tegnologías enfocadas a la mejoras de procesos y reducción de costos/reciduos.",
+								"160 hs",1,"https://i.ibb.co/pxQj5ZV/ungs.png","Posgrado - Asesor en Tegnologías de Gestión","2021-11-01");
+                                
+select * from education;
+
+insert into social (id, id_persona, img_social, link_social, name_social)
+					values(1,1,"https://i.ibb.co/DGPSS08/github.png","https://github.com/pereyrahugor","GitHub");
+insert into social (id, id_persona, img_social, link_social, name_social)
+					values(2,1,"https://i.ibb.co/hsfHzRt/linkedin.png","https://www.linkedin.com/in/hugo-pereyra-hrp","Linkedin");
+                    
+select * from social;
+
+insert into skill (id, color_in, color_out, id_persona, img_skill, name_skill, progress)
+					values(1,"#f16524","#e54c21",1,"https://i.ibb.co/ft46jh6/html.png","html", 70);
+insert into skill (id, color_in, color_out, id_persona, img_skill, name_skill, progress)
+					values(2,"#3399ff","#2277ff",1,"https://i.ibb.co/wWbL6c6/CSS.png","css", 50);
+insert into skill (id, color_in, color_out, id_persona, img_skill, name_skill, progress)
+					values(3,"#ffd83a","#dab92d",1,"https://i.ibb.co/q52b1Rt/js.png","javascript", 85);
+insert into skill (id, color_in, color_out, id_persona, img_skill, name_skill, progress)
+					values(4,"#79daf8","#0300b3",1,"https://i.ibb.co/dg0jhZJ/git.png","github", 70);
+insert into skill (id, color_in, color_out, id_persona, img_skill, name_skill, progress)
+					values(5,"#79daf8","#0300b3",1,"https://i.ibb.co/0M6rtRY/eng.png","ingles", 50);
+insert into skill (id, color_in, color_out, id_persona, img_skill, name_skill, progress)
+					values(6,"#79daf8","#0300b3",1,"https://i.ibb.co/m6b8C1F/grupal.png","equipo", 80);
+                    
+select * from skill
+
+insert into project (id, description_project, id_persona, img_project, link_project, name_project)
+					values(1,"Este mismo porfolio fue creado apartir de los conocimientos adquiridos en este proyecto, la idea es ir perfeccionandolo y completandolo con el transcurso de nuevos proyectos",1,"https://i.ibb.co/xDznx6G/Arg-Prog-Logo.png","https://i.ibb.co/xDznx6G/Arg-Prog-Logo.png","Argentina Programa - Porfolio Online");
+                    
+select * from project;
+
+select * from user;
+
+select * from rol;
+
+select * from user_rol;
+
+INSERT INTO rol( id,rol_name)VALUES(NULL,'ROLE_ADMIN');
+INSERT INTO rol (id,rol_name)VALUES(NULL,'ROLE_USER');
+
+-- userName: ArgProgAdmin
+-- password: ArgProg5310
